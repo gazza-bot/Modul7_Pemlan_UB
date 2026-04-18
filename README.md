@@ -24,7 +24,7 @@ Modul7-Polimorphisme/
 ## 🧩 Diagram Kelas
 
 
-<img src="Class Diagram.png">
+<img src="/Modul7-Polimorphisme/src/Class Diagram.png">
 
 
 ---
