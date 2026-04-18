@@ -11,6 +11,6 @@ public abstract class Kue {
 
     public void getInfo() {
         System.out.printf("Nama : %s\n", this.nama);
-        System.out.printf("Nama : %.2f\n", this.harga);
+        System.out.printf("Harga : %.2f\n", this.harga);
     }
 }
