@@ -81,17 +81,4 @@ java App
 - `KuePesanan` → harga dihitung berdasarkan **berat (kg)**
 - `KueJadi` → harga dihitung berdasarkan **jumlah (pcs)**
 - Method `hitungHarga()` belum dipanggil di `App.java`, sehingga harga yang ditampilkan masih merupakan **harga satuan**, bukan total
-
-### 🐛 Known Issue
-
-Di `Kue.java`, label print untuk `harga` salah:
-
-```java
-// ❌ Sekarang
-System.out.printf("Nama : %.2f\n", this.harga);
-
-// ✅ Seharusnya
-System.out.printf("Harga : %.2f\n", this.harga);
-```
-
 *Mata Kuliah Pemrograman Berorientasi Objek — Universitas Brawijaya*
