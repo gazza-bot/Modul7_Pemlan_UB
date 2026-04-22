@@ -8,13 +8,11 @@ public class KuePesanan extends Kue{
     
     @Override
     public double hitungHarga(){
-        this.harga = berat * this.harga;
-        return this.harga;    
+        return berat * this.harga;
     }
 
     @Override
     public void getInfo(){
-        this.harga = this.hitungHarga();
         super.getInfo();
         System.out.printf("Berat : %.2f Kg\n", this.berat);
     }

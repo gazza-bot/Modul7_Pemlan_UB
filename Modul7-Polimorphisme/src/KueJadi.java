@@ -8,13 +8,11 @@ public class KueJadi extends Kue{
 
     @Override
     public double hitungHarga(){
-        this.harga = jumlah * this.harga * 2;
-        return this.harga;
+        return jumlah * this.harga * 2;
     }
 
     @Override
     public void getInfo(){
-        this.harga = this.hitungHarga();
         super.getInfo();
         System.out.println("Jumlah : " + (int) this.jumlah + " Pcs");
     }
