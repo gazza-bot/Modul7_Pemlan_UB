@@ -14,7 +14,13 @@ public class KuePesanan extends Kue{
 
     @Override
     public void getInfo(){
+        this.harga = this.hitungHarga();
         super.getInfo();
-        System.out.printf("Berat : %.2f\n", this.berat);
+        System.out.printf("Berat : %.2f Kg\n", this.berat);
+    }
+
+    @Override
+    public double getQty(){
+        return this.berat;
     }
 }

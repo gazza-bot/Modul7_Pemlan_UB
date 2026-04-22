@@ -14,7 +14,13 @@ public class KueJadi extends Kue{
 
     @Override
     public void getInfo(){
+        this.harga = this.hitungHarga();
         super.getInfo();
-        System.out.println("Jumlah : " + this.jumlah);
+        System.out.println("Jumlah : " + (int) this.jumlah + " Pcs");
+    }
+
+    @Override
+    public double getQty(){
+        return this.jumlah;
     }
 }
