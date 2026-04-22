@@ -33,32 +33,30 @@ public class App {
         int idx[][] = { { 0, -1 }, { 1, -1 } };
         double max1 = 0;
         for (int i = 0; i < 10; i++) {
-            if (lsKue[0][i].harga > max1) {
-                max1 = lsKue[0][i].harga;
-                idx[0][1] = i;
-            }
-
             if (i == 0)
                 System.out.println("Kue Pesanan");
             lsKue[0][i].getInfo();
             totalPesanan += lsKue[0][i].harga;
             berat += lsKue[0][i].getQty();
+            if (lsKue[0][i].harga > max1) {
+                max1 = lsKue[0][i].harga;
+                idx[0][1] = i;
+            }
         }
 
         double jumlah = 0;
         double totalJadi = 0;
         double max = 0;
         for (int i = 0; i < 10; i++) {
-            if (lsKue[0][i].harga > max) {
-                max = lsKue[1][i].harga;
-                idx[1][1] = i;
-            }
-            
             if (i == 0)
                 System.out.println("Kue Jadi");
             lsKue[1][i].getInfo();
             totalJadi += lsKue[1][i].harga;
             jumlah += lsKue[1][i].getQty();
+            if (lsKue[0][i].harga > max) {
+                max = lsKue[1][i].harga;
+                idx[1][1] = i;
+            }
         }
         
         double totalSemua = totalPesanan + totalJadi;

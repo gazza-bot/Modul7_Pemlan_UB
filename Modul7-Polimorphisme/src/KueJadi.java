@@ -8,7 +8,7 @@ public class KueJadi extends Kue{
 
     @Override
     public double hitungHarga(){
-        this.harga = jumlah * this.harga;
+        this.harga = jumlah * this.harga * 2;
         return this.harga;
     }
 
